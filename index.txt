@@ -1,0 +1,20 @@
+頑張れよ！キャンフェス！
+
+応急措置
+注意点＆画像を組み込む方法
+ステップ1
+HTMLの「circle4~9」までは画像がありません
+なので画像が出来上がったら
+HTML　↓
+ <div class="square-box"><img  src="img/icon3.png" 
+ alt="サークルアイコン" width="300px"height="300px"></div>
+
+この様にしてください↑
+
+ステップ2
+circle.HTMLのコードで
+<div class="img_wrap">
+      <div class="circle-box"><a href="circle1.html"><img class="circle-img" src="img/icon3.png" alt="サークルアイコン" width="150px" height="150px"></a></div>
+    </div>
+    このコードが9個並んであるので上三つは画像がありますが
+    後の残りは画像がないのでそこに↑のコードと同じように画像を貼るだけで大丈夫です。
