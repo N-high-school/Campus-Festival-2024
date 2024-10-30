@@ -1,0 +1,468 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../img/backgraund.png') no-repeat center center fixed;
+    background-repeat: repeat;
+    background-size: 100% 350%; /* 横幅を50%、高さを200%に設定 */
+    background-position: top left;
+    background-attachment: scroll;
+
+}
+   /* カスタムスクロールバーのスタイル */
+   body::-webkit-scrollbar {
+    width: 12px; /* スクロールバーの幅 */
+}
+
+html body::-webkit-scrollbar-track, body body::-webkit-scrollbar-track {
+  background: #ffd9a4; /* スクロールバーのトラックの色 */
+}
+html body::-webkit-scrollbar-thumb, body body::-webkit-scrollbar-thumb {
+  background: #95bef3; /* スクロールバーのハンドルの色 */
+  border-radius: 10px; /* 丸みを追加 */
+}
+html body::-webkit-scrollbar-thumb:hover, body body::-webkit-scrollbar-thumb:hover {
+  background: #2980b9; /* ホバー時の色 */
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 2s ease-out;
+}
+
+/* フェードアウト効果 */
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 画像のスタイル */
+#loading-image {
+  max-width: 50%;
+  height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 100px; /* ヘッダーの高さに合わせてコンテンツを下げる */
+}
+
+/* フォント変更 */
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+/* ヘッダーデザイン */
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #ffd9a4;
+    align-items: center;
+    position: fixed;
+    top: 0; /* ヘッダーを最上部に固定 */
+    
+    z-index: 1000; /* 他の要素よりも前面に表示 */
+}
+.header-1{
+  float: left;
+  padding: 30px 40px;
+  z-index: 1;
+}
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-right: 35px;
+  font-size: 15px;
+}
+.title {
+    margin-right: auto;
+    margin-left: 20px; /* 左側に余白を追加（適宜調整） */
+    font-size: 25px; /* 文字サイズを調整 */
+    
+}
+
+  .btn,
+  a.btn,
+  button.btn {
+    display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.9;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+  
+  a.btn-border-shadow {
+    padding:10px 15px;
+  
+    background: #fff;
+  }
+  
+  a.btn-border-shadow:before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+  
+    width: 80%;
+    height: 80%;
+    padding:5px 10px;
+    content: "";
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    border: 3px solid #000;
+    border-radius: 0.5rem;
+  }
+  
+  a.btn-border-shadow:hover {
+    padding:10px 15px;
+  }
+  
+  a.btn-border-shadow:hover:before {
+    top: 0;
+    left: 0;
+  }
+  
+  a.btn-border-shadow--color2 {
+    border-radius: 100vh;
+  }
+  
+  a.btn-border-shadow--color2:before {
+    border-radius: 100vh;
+    -webkit-box-shadow: 3px 3px 0 #ffd9a4;
+    box-shadow: 3px 3px 0 #ffd9a4;
+  }
+.menu-group {
+
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a:hover{
+    color: black;
+}
+
+/* 吹き出しとキャラクター */
+.balloon-chat {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.balloon-chat.left {
+    flex-direction: row; /* キャラクターを左、吹き出しを右に */
+}
+
+.container {
+    display: flex;
+    justify-content: center;  /* 水平方向の中央揃え */
+    align-items: center;      /* 垂直方向の中央揃え */
+    height: 90vh;  /* 画面全体の高さに揃える */
+}
+
+.nagona1-image {
+    width: 5000px; /* 画像サイズを調整 */
+    height: auto;
+}
+
+.character-name {
+    text-align: center;
+    font-size: 29px;
+    margin-top: 5px;
+}
+
+.box23 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+  margin-top: -70px;
+  margin-left: -60px;
+  padding: .8em 1.2em;
+  border-radius: 5px;
+  background: #ccffcc;
+  color: #333333;
+}
+.box23::before {
+  position: absolute;
+  left: -15px;
+  width: 15px;
+  height: 30px;
+  margin-top: 0px;
+  background: #ccffcc;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  content: '';
+}
+
+.box23 p {
+  margin: 0; 
+  padding: 0;
+}
+#image-container img {
+  
+  object-fit: cover; /* width, heightといっしょに使います */
+width: 320px;
+height:auto;}
+footer{
+  background-color: rgb(99, 34, 4);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2,auto);
+  gap: 0px;
+}
+
+.item {
+  list-style: none;
+  margin: 0px auto -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{
+  margin-top: 390px;
+  position: absolute; /*自由に配置する指定*/
+margin-left: 190px;
+  text-align: center;
+}
+.box1{
+  background-color: #ffd9a4;
+  width: 530px;
+border-color:orange ;
+background: #ffd9a4;
+box-shadow: 0px 0px 0px 10px #ffd9a4;
+border: dashed 2.5px #ffff;
+border-radius: 8px;
+}
+.nev{
+  display: flex;
+  flex: 1;
+  flex-direction: row; /* ナビゲーション項目も横に並べる */
+}.wrap{   text-align:center;
+ 
+}h1{
+  text-align: center;
+  bottom: -100px; /* 下からの距離 */
+}
+.pagetop {
+  display: none;
+  position: fixed;
+ bottom: 0;       /* 下端に配置 */
+right: -40px;   
+}
+.pagetop a {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 4px 6px;
+
+}
+.pagetop a:hover {
+  display: block;
+  text-align: center;
+
+  font-size: 12px;
+  text-decoration: none;
+  padding:5px 10px;
+  filter:alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer_hidden {
+    display: none;
+  }
+  
+  @media screen and (max-width: 765px) {
+    /* ハンバーガーアイコンの設置スペース */
+   .drawer_open {
+     position: absolute;
+     right:  80px;
+     top: 20px;
+     z-index: 100;
+     cursor: pointer;
+   }
+   
+   /* ハンバーガーメニューのアイコン */
+   .drawer_open span,
+   .drawer_open span:before,
+   .drawer_open span:after {
+     content: '';
+     display: block;
+     height: 3px;
+     width: 25px;
+     border-radius: 3px;
+     background: #333;
+     transition: 0.5s;
+     position: absolute;
+   }
+   
+   /* 三本線の一番上の棒の位置調整 */
+   .drawer_open span:before {
+     bottom: 10px;
+   }
+   
+   /* 三本線の一番下の棒の位置調整 */
+   .drawer_open span:after {
+     top: 8px;
+   }
+   
+   /* アイコンがクリックされたら真ん中の線を透明にする */
+   #drawer_input:checked ~ .drawer_open span {
+     background: rgba(255, 255, 255, 0);
+   }
+   
+   /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+   #drawer_input:checked ~ .drawer_open span::before {
+     bottom: 0;
+     transform: rotate(45deg);
+   }
+   
+   #drawer_input:checked ~ .drawer_open span::after {
+     top: 0;
+     transform: rotate(-45deg);
+   }
+ 
+   .nav_content {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0%;
+     left: 100%; /* メニューを画面の外に飛ばす */
+     z-index: 99;
+     background: #ffd9a4;
+     transition: .5s;
+   
+     padding-top: 20px;
+   }
+   #li{
+    font-size: 200px;
+   }
+   /* アイコンがクリックされたらメニューを表示 */
+   #drawer_input:checked ~ .nav_content {
+     left: 0;
+   }
+     }
+
+     @media screen and (max-width: 375px) {
+      /* ハンバーガーアイコンの設置スペース */
+     .drawer_open {
+       position: absolute;
+       right:  80px;
+       top: 20px;
+       z-index: 100;
+       cursor: pointer;
+     }
+     
+     /* ハンバーガーメニューのアイコン */
+     .drawer_open span,
+     .drawer_open span:before,
+     .drawer_open span:after {
+       content: '';
+       display: block;
+       height: 3px;
+       width: 25px;
+       border-radius: 3px;
+       background: #333;
+       transition: 0.5s;
+       position: absolute;
+     }
+     
+     /* 三本線の一番上の棒の位置調整 */
+     .drawer_open span:before {
+       bottom: 10px;
+     }
+     
+     /* 三本線の一番下の棒の位置調整 */
+     .drawer_open span:after {
+       top: 8px;
+     }
+     
+     /* アイコンがクリックされたら真ん中の線を透明にする */
+     #drawer_input:checked ~ .drawer_open span {
+       background: rgba(255, 255, 255, 0);
+     }
+     
+     /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+     #drawer_input:checked ~ .drawer_open span::before {
+       bottom: 0;
+       transform: rotate(45deg);
+     }
+     
+     #drawer_input:checked ~ .drawer_open span::after {
+       top: 0;
+       transform: rotate(-45deg);
+     }
+   
+     .nav_content {
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       top: 0%;
+       left: 100%; /* メニューを画面の外に飛ばす */
+       z-index: 99;
+       background: #ffd9a4;
+       transition: .5s;
+     
+       padding-top: 20px;
+     }
+     #li{
+      font-size: 30px;
+     }
+     /* アイコンがクリックされたらメニューを表示 */
+     #drawer_input:checked ~ .nav_content {
+       left: 0;
+     }
+       }
+   
