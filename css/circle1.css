@@ -133,7 +133,7 @@ html, body {
 
 h2{
   position: absolute;
-  left: calc(58% + -30px); /* 中央から右に移動 */
+  left: calc(63% + -30px); /* 中央から右に移動 */
 }
 
 
