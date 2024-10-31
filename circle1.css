@@ -15,16 +15,16 @@ html, body {
           width: 12px; /* スクロールバーの幅 */
       }
 
-   html body::-webkit-scrollbar-track, body body::-webkit-scrollbar-track {
-        background: #ffd9a4; /* スクロールバーのトラックの色 */
-      }
-      html body::-webkit-scrollbar-thumb, body body::-webkit-scrollbar-thumb {
-        background: #95bef3; /* スクロールバーのハンドルの色 */
-        border-radius: 10px; /* 丸みを追加 */
-      }
-      html body::-webkit-scrollbar-thumb:hover, body body::-webkit-scrollbar-thumb:hover {
-        background: #2980b9; /* ホバー時の色 */
-      }
+    html body::-webkit-scrollbar-track, body body::-webkit-scrollbar-track {
+      background: #ffd9a4; /* スクロールバーのトラックの色 */
+    }
+    html body::-webkit-scrollbar-thumb, body body::-webkit-scrollbar-thumb {
+      background: #95bef3; /* スクロールバーのハンドルの色 */
+      border-radius: 10px; /* 丸みを追加 */
+    }
+    html body::-webkit-scrollbar-thumb:hover, body body::-webkit-scrollbar-thumb:hover {
+      background: #2980b9; /* ホバー時の色 */
+    }
       }
 
   
