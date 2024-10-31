@@ -30,6 +30,7 @@ html, body {
 
 
 
+
 * {
     box-sizing: inherit; /* 全要素にボックスモデルを適用 */
 }
@@ -55,7 +56,7 @@ header {
   display: flex;
   width: 100%;
   height: 70px;
-  background-color: #ffd9a4;
+  background-color: rgba(150, 127, 255, 0.721);
   align-items: center;
   position: fixed;
   top: 0; /* ヘッダーを最上部に固定 */
@@ -65,7 +66,9 @@ h1{
   text-align: center;
   bottom: -100px; /* 下からの距離 */
 }
-
+h2{
+text-align: center;
+}
 .title {
     margin-right: auto;
     margin-left: 20px; /* 左側に余白を追加（適宜調整） */
@@ -109,14 +112,15 @@ a{
   top: 30%;
   transform: translateY(-50%);
   text-align: center;
-
+  line-height: 200px; /* ボックス内のテキストを中央揃え */
   box-shadow: 15px 15px 0px 0 #ffD9a4;
   border-radius: 50%;
+
 }
 
 .circle-box {
 width: 500px;
-height: 150px;
+height: 200px;
 border-radius: 50%;
 position: absolute;
 left: calc(45% + 30px); /* 中央から右に移動 */
@@ -131,9 +135,10 @@ border-radius: 8px;
 
 }
 
+
 h2{
 position: absolute;
-left: calc(58% + -30px); /* 中央から右に移動 */
+left: calc(58% + 30px); /* 中央から右に移動 */
 }
 
 
