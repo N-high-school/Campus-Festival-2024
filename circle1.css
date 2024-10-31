@@ -116,7 +116,7 @@ html, body {
 
 .circle-box {
   width: 500px;
-  height: 180px;
+  height: 130px;
   border-radius: 50%;
   position: absolute;
   left: calc(45% + 30px); /* 中央から右に移動 */
@@ -130,9 +130,10 @@ html, body {
   border-radius: 8px;
   
 }
+
 h2{
   position: absolute;
-  left: calc(58% + 20px); /* 中央から右に移動 */
+  left: calc(58% + -30px); /* 中央から右に移動 */
 }
 
 
